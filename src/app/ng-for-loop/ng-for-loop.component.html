@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="h1">
+        <h1>{{pageTitle}}</h1>
+    </div>
+</div>
+<div class="container courses">
+    <div class="row">
+        <div class="col">Name</div><div class="col">Price</div><div class="col">Category</div>
+    </div>
+    <div *ngFor = "let course of courses" class="row">
+        <div class="col">{{course.name}}</div>
+        <div class="col">{{course.price}}</div>
+        <div class="col">{{course.category}}</div>
+    </div>
+        
+  
+</div>
