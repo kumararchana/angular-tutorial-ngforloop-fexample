@@ -5,11 +5,8 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './tabs-ngswitch.component.html',
   styleUrls: ['./tabs-ngswitch.component.css']
 })
-export class TabsNgswitchComponent implements OnInit {
+export class TabsNgswitchComponent {
 
-  constructor() { }
-
-  ngOnInit() {
-  }
+tabsView = "home";
 
 }
