@@ -11,6 +11,7 @@ import { EvenBindingComponent } from './even-binding-ng-class/even-binding.compo
 import {TabsNgswitchComponent} from './tabs-ngswitch/tabs-ngswitch.component';
 import { ModalPopupComponent } from './modal-popup/modal-popup.component';
 import { NavBarComponentComponent } from './nav-bar-component/nav-bar-component.component';
+import { PostServicesComponent } from './post-services/post-services.component';
 
 @NgModule({
   imports:      [ 
@@ -24,7 +25,7 @@ import { NavBarComponentComponent } from './nav-bar-component/nav-bar-component.
       {path: "showHideByNgclass", component: EvenBindingComponent}
     ]
    ) ],
-  declarations: [ AppComponent, HelloComponent, NgForLoopComponent, EvenBindingComponent, TabsNgswitchComponent, ModalPopupComponent, NavBarComponentComponent],
+  declarations: [ AppComponent, HelloComponent, NgForLoopComponent, EvenBindingComponent, TabsNgswitchComponent, ModalPopupComponent, NavBarComponentComponent, PostServicesComponent],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
