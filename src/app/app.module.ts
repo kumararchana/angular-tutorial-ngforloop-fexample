@@ -12,7 +12,8 @@ import { EvenBindingComponent } from './even-binding-ng-class/even-binding.compo
 import {TabsNgswitchComponent} from './tabs-ngswitch/tabs-ngswitch.component';
 import { ModalPopupComponent } from './modal-popup/modal-popup.component';
 import { NavBarComponentComponent } from './nav-bar-component/nav-bar-component.component';
-import { PostServicesComponent } from './httpClient-get/post-services.component';
+import { httpClientGetComponent } from './httpClient-get/httpClient-get.component';
+import { HttpClientPostComponent } from './http-client-post/http-client-post.component';
 
 @NgModule({
   imports:      [ 
@@ -25,10 +26,12 @@ import { PostServicesComponent } from './httpClient-get/post-services.component'
       {path: "tabsByNgswitch", component: TabsNgswitchComponent},
       {path: "modalByNgbootstrap", component: ModalPopupComponent},
       {path: "showHideByNgclass", component: EvenBindingComponent},
-      {path: "httpClientMethod", component: PostServicesComponent}
+      {path: "httpClientMethod", component: httpClientGetComponent},
+      {path: "httpClientPostMethod", component: HttpClientPostComponent}
+      
     ]
    ) ],
-  declarations: [ AppComponent, HelloComponent, NgForLoopComponent, EvenBindingComponent, TabsNgswitchComponent, ModalPopupComponent, NavBarComponentComponent, PostServicesComponent],
+  declarations: [ AppComponent, HelloComponent, NgForLoopComponent, EvenBindingComponent, TabsNgswitchComponent, ModalPopupComponent, NavBarComponentComponent, httpClientGetComponent, HttpClientPostComponent],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
